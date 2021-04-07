@@ -5,24 +5,24 @@
 class GoreleaserLive < Formula
   desc "GoReleaser on #DevOpsLiveCZ"
   homepage "https://github.com/vojtechmares/goreleaser-live"
-  version "1.3.0"
+  version "1.4.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/vojtechmares/goreleaser-live/releases/download/v1.3.0/goreleaser-live_1.3.0_macOS_x86_64.tar.gz"
-    sha256 "f7deb4e87cdc88014715d8ecce394ce56c37e09b5ac68ca1a1af3fcfa049a032"
+    url "https://github.com/vojtechmares/goreleaser-live/releases/download/v1.4.0/goreleaser-live_1.4.0_macOS_x86_64.tar.gz"
+    sha256 "ea39d963b260374a69f7955bd651cc8a99540834d3a805eaabf0a58d22553c45"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/vojtechmares/goreleaser-live/releases/download/v1.3.0/goreleaser-live_1.3.0_macOS_arm64.tar.gz"
-    sha256 "87365dfbc668cce6715ac7066baab20e62f32bb465e5f8853fdde1ddff09f8a9"
+    url "https://github.com/vojtechmares/goreleaser-live/releases/download/v1.4.0/goreleaser-live_1.4.0_macOS_arm64.tar.gz"
+    sha256 "81d162bb7eb80568c5248dca10026dae56193283caefd7267606d4583c1adff9"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/vojtechmares/goreleaser-live/releases/download/v1.3.0/goreleaser-live_1.3.0_Linux_x86_64.tar.gz"
-    sha256 "f51f785be668bbc891d1e3177eef19ec6132dee52765a3478db5059eca50fb1e"
+    url "https://github.com/vojtechmares/goreleaser-live/releases/download/v1.4.0/goreleaser-live_1.4.0_Linux_x86_64.tar.gz"
+    sha256 "72cede4949ab3f613264e7d8c4a35a0e55a96ade33bdd15ba8c84f09876936c3"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/vojtechmares/goreleaser-live/releases/download/v1.3.0/goreleaser-live_1.3.0_Linux_arm64.tar.gz"
-    sha256 "850421eca1c92b5d3bd15472383782949c632d912371dcbf60a309302c706eb2"
+    url "https://github.com/vojtechmares/goreleaser-live/releases/download/v1.4.0/goreleaser-live_1.4.0_Linux_arm64.tar.gz"
+    sha256 "874a1285735e3a54f6f81059a01ae814687eff3fa99424262739177acf4a2cd1"
   end
 
   def install
